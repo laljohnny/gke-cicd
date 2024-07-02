@@ -28,9 +28,9 @@ steps:
   - -xe
   - -c
   - |
-    gcloud deploy apply --file deploy/pipeline.yaml --region=asia-northeast2
-    gcloud deploy apply --file deploy/dev.yaml --region=asia-northeast2
-    gcloud deploy releases create 'app-release-${SHORT_SHA}' --delivery-pipeline=gke-cicd-pipeline --region=asia-northeast2 --skaffold-file=skaffold.yaml
+    gcloud deploy apply --file deploy/pipeline.yaml --region=us-south1
+    gcloud deploy apply --file deploy/dev.yaml --region=us-south1
+    gcloud deploy releases create 'app-release-${SHORT_SHA}' --delivery-pipeline=gke-cicd-pipeline --region=us-south1 --skaffold-file=skaffold.yaml
 
 
 options:
