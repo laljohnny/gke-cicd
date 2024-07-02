@@ -4,21 +4,21 @@ steps:
   id: 'Build Docker Image'
 
   # images:
-  # - 'us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/quickstart-image'
+  # - 'us-south1-docker.pkg.dev/nodeapp1-0/doc/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/quickstart-image' ]
+  args: ['push', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/quickstart-image' ]
   id: 'Push Docker Image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/flask-image', './app2' ]
+  args: ['build', '-t', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/flask-image', './app2' ]
   id: 'Build Docker Image2'
 
   # images:
-  # - 'us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/flask-image'
+  # - 'us-south1-docker.pkg.dev/nodeapp1-0/doc/flask-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/flask-image' ]
+  args: ['push', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/flask-image' ]
   id: 'Push Docker Image2'
 
 
