@@ -7,5 +7,5 @@ metadata:
 description: prod
 requireApproval: true
 gke:
-  cluster: projects/nodeApp/locations/us-south1/clusters/cluster-1
+  cluster: projects/nodeApp/locations/us-south1-a/clusters/cluster-2
 
