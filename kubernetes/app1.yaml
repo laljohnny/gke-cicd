@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/quickstart-image
+          image: us-south1-docker.pkg.dev/nodeapp1-0/doc/quickstart-image
           ports:
             - containerPort: 8080
 
