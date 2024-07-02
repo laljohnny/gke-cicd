@@ -6,5 +6,5 @@ metadata:
   labels: {}
 description: dev
 gke:
-  cluster: projects/nodeApp/locations/us-south1/clusters/cluster-2
+  cluster: projects/nodeApp/locations/us-south1-b/clusters/cluster-1
 
