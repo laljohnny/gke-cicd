@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/var1.0/quickstart-image', './app1' ]
+  args: ['build', '-t', 'us-south1-docker.pkg.dev/nodeapp1-0/doc/quickstart-image', './app1' ]
   id: 'Build Docker Image'
 
   # images:
